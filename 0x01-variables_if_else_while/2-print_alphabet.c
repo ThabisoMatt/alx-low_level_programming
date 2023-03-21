@@ -1,4 +1,4 @@
-#include <stdio.h> 
+#include <stdio.h>
 
 int main(void)
 {
@@ -9,6 +9,6 @@ int main(void)
 		putchar(lowerCases);
 	}
 	putchar("\n");
-	
+
 	return (0);
 }
