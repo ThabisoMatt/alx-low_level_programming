@@ -4,11 +4,11 @@ int main(void)
 {
 	char lowerCases;
 
-	for (lowerCases = 'a'; lowerCases <= 'z'; lowerCases++)
-    	{
+	for (lowerCases = "a"; lowerCases <= "z"; lowerCases++)
+	{
 		putchar(lowerCases);
 	}
-	putchar('\n');
-
+	putchar("\n");
+	
 	return (0);
 }
