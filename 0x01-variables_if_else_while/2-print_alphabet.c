@@ -9,5 +9,6 @@ int main(void)
 		putchar(lowerCases);
 	}
 	putchar('\n');
+
 	return (0);
 }
