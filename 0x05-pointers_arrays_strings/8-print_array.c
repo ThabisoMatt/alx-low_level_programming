@@ -2,18 +2,19 @@
 #include <stdio.h>
 
 /**
+ * print_array - Entry point
  * print_array - prints n elements of an array of integers.
- * @a: input array.
- * @n: input n elements
- * Return: no return.
+ * @a: integer.
+ * @n: integer
+ * Return: int
  */
 void print_array(int *a, int n)
 {
-        int i = 0;
+        int i;
 
-        for (; i < n; i++)
+        for (i = 0; i < n; i++)
         {
-                _putchar("%d", *(a + i));
+                _putchar("%d", a[i]);
                 if (i != (n - 1))
                         _putchar(", ");
         }
