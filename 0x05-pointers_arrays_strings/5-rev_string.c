@@ -5,26 +5,16 @@
  * @s: input string.
  * Return: no return.
  */
-void rev_string(char *s)
+void reverse_string(char *str) 
 {
-	int count = 0, i, j;
-	char *str, temp;
-
-	while (count >= 0)
+	int len = strlen(str);
+	char temp;
+	
+	for (int i = 0; i < len / 2; i++) 
 	{
-		if (s[count] == '\0')
-			break;
-		count++;
-	}
-	str = s;
-	for (i = 0; i < (count - 1); i++)
-	{
-		for (j = i + 1; j > 0; j--)
-		{
-			temp = *(str + j);
-			*(str + j) = *(str + (j - 1));
-			*(str + (j - 1)) = temp;
-		}
+		temp = str[i];
+		str[i] = str[len - 1 - i];
+		str[len - 1 - i] = temp;
 	}
 }
 
