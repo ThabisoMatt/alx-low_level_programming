@@ -9,16 +9,18 @@
  * @src: source.
  * Return: the pointer to dest.
  */
-char *_strcpy(char *dest, char *src)
+void copy_string(char *dest, char *src) 
 {
-        int count = 0;
-
-        while (count >= 0)
-        {
-                *(dest + count) = *(src + count);
-                if (*(src + count) == '\0')
-                        break;
-                count++;
-        }
-        return (dest);
+	strcpy(dest, src);
+}
+int main() 
+{
+	char src[] = "Hello, world!";
+	char dest[20];
+	
+	copy_string(dest, src);
+	putchar("Source string: %s\n", src);
+	putchar("Destination string: %s\n", dest);
+	
+	return 0;
 }
