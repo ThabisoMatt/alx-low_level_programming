@@ -19,8 +19,8 @@ int main()
 	char dest[20];
 	
 	copy_string(dest, src);
-	putchar("Source string: %s\n", src);
-	putchar("Destination string: %s\n", dest);
+	_putchar("Source string: %s\n", src);
+	_putchar("Destination string: %s\n", dest);
 	
 	return 0;
 }
