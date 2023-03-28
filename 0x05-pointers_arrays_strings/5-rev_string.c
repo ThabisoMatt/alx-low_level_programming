@@ -1,8 +1,9 @@
 #include "main.h"
+#include <string.h>
 
 /*
  * rev_string - reverses a string.
- * @s: input string.
+ * @s: character string.
  * Return: return void.
  */
 void rev_string(char *s)
