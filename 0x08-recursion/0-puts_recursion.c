@@ -3,15 +3,19 @@
 /**
  * _puts_recursion - function like puts();
  * @s: input
- * Return: Always 0 (Success)
+ * Return: Always 0
  */
 void _puts_recursion(char *s)
 {
-	if (*s)
+	if (*s == '\0')
 	{
-		_putchar(*s);
-		_puts_recursion(s + 1);
+		putchar('\n');
+
+		return;
 	}
 	else
-		_putchar('\n');
+	{
+		putchar(*s);
+		_puts_recursion(s + 1);
+	}
 }
