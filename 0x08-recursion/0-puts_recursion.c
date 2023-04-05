@@ -4,20 +4,23 @@
  * main - enrty
  * return: 0
  */
-void _print_rev_recursion(char *s)
+void _puts_recursion(char *s)
 {
-	if (*s == '\0')
+	if (*s == '\0') 
 	{
-		return;
+		putchar('\n');
+	return;
 	}
 	else
 	{
-		_print_rev_recursion('s + 1');
-		putchar(*s);
+		putchar(*s)
+
+		_puts_recursion(s + 1);
 	}
 }
-int main(void)
+int main()
 {
-	_puts_recursion("Puts with recursion");
-	return (0);
+	char str[] = "hello, world!";
+	_puts_recursion(str);
+	return 0;
 }
