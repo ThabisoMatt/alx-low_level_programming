@@ -1,5 +1,9 @@
 #include <main.h>
 
+/**
+ * main - enrty
+ * return: 0
+ */
 void _print_rev_recursion(char *s)
 {
 	if (*s == '\0')
@@ -14,9 +18,6 @@ void _print_rev_recursion(char *s)
 }
 int main(void)
 {
-	char str[] = "Thabiso, Matthews!";
-
-		_print_rev_recursion(str);
-
-	return 0;
+	_puts_recursion("Puts with recursion");
+	return (0);
 }
